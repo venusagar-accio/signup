@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <script>
+        function saveData() {
+            // Get the value from the input field
+            const userInput = document.getElementById('userInput').value;
+            
+            // Save the value to localStorage
+            localStorage.setItem('storedData', userInput);
+            
+            // Redirect to the display page
+            window.location.href = 'display.html';
+            
+            // Prevent form submission
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h1>Input Page</h1>
+    <form onsubmit="return saveData()">
+        <label for="userInput">Enter some information:</label>
+        <input type="text" id="userInput" required>
+        <label for="userInput">enter extra information</label>
+        <input type="text" id="userInput">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

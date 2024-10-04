@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            justify-content: space-around;
+            text-decoration: none;
+        }
+        body{
+            padding-left: 350px;
+            padding-top: 70px;
+        }
+        .eg1{
+            font-size: x-large ;
+            width: 750px;
+            border: none;
+            border-bottom: 1.5px solid black;
+            line-height: 70px;
+        }
+        #eg2{
+            font-size: 60px;
+        }
+        .eg3{
+            font-size: x-large ;
+            width: 750px;
+            border: none;
+            border-bottom: 1.5px solid black;
+        }
+        footer{
+            line-height: 30px;
+        }
+        button{
+            font-size: xx-large;
+            color: black;
+            width: 180px;
+            height: 60px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="eg2">Staff registration</h1>
+        </header>
+        <form>
+            <input class="eg3" type="text" placeholder="NAME" required><br>
+            <input class="eg1" type="number" placeholder="PHONE.NO" required><br>
+            <input class="eg1" type="email" placeholder="EMAIL-ID" required><br>
+            <input class="eg1" type="text" placeholder="ADDRESS" required><br>
+            <label class="eg1">Staff:</label>
+            <input type="radio" name="Staff:" vale="Teaching Staff">Teaching Staff
+            <input type="radio" name="Staff:" value="Non-Teaching Staff">Non-Teaching Staff<br>
+            <input class="eg1" type="date" placeholder="dd-mm-yyyy" required><br>
+            <footer>
+            <label class="eg1">Gender:</label>
+            <input type="radio" name="Gender" vale="Male">Male
+            <input type="radio" name="Gender" value="Female">Female<br>
+            <button>signup</button>
+            </footer>
+        </form>
+</body>
+</html>
