@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        *{
+            background-color: #000000;
+            color: white;
+        }
+        body{
+            padding-left: 350px;
+            padding-top: 70px;
+        }
+        .eg1{
+            font-size: x-large ;
+            width: 750px;
+            border: none;
+            border-bottom: 1.5px solid white;
+            line-height: 70px;
+        }
+        #eg2{
+            font-size: 60px;
+        }
+        .eg3{
+            font-size: x-large ;
+            width: 750px;
+            border: none;
+            border-bottom: 1.5px solid white;
+        }
+        footer{
+            line-height: 30px;
+        }
+        button{
+            font-size: xx-large;
+            color: black;
+            background-color: white;
+            width: 180px;
+            height: 60px;
+        }
+        ::placeholder{
+            color: white;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Page</title>
-    <script>
-        function saveData() {
-            // Get the value from the input field
-            const userInput = document.getElementById('userInput').value;
-            
-            // Save the value to localStorage
-            localStorage.setItem('storedData', userInput);
-            
-            // Redirect to the display page
-            window.location.href = 'display.html';
-            
-            // Prevent form submission
-            return false;
-        }
-    </script>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Input Page</h1>
-    <form onsubmit="return saveData()">
-        <label for="userInput">Enter some information:</label>
-        <input type="text" id="userInput" required>
-        <label for="userInput">enter extra information</label>
-        <input type="text" id="userInput">
-        <button type="submit">Submit</button>
-    </form>
+    <header>
+    <h1 id="eg2">Signup</h1>
+    </header>
+    <form>
+        <main>
+        <input class="eg3" type="text" placeholder="Full Name" required><br>
+        <input class="eg1" type="email" placeholder="Email" required><br>
+        <input class="eg1" type="password" placeholder="Password" required><br>
+        <input class="eg1" type="password" placeholder="Confirm Password" required><br>
+        <input class="eg1" type="date" placeholder="dd-mm-yyyy" required><br>
+        </main>
+        <footer>
+        <input type="radio" required id="student" name="venu">
+        <label for="student">Student</label>
+        <input type="radio" required id="employee" name="venu">
+        <label for="employee">Employee</label><br>
+        <input type="checkbox" required>I agree to all the Terms and conditions<br>
+        <button>signup</button>
+        </footer>
+    </form> 
 </body>
 </html>
